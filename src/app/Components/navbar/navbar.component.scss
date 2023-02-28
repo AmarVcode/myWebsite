@@ -1,11 +1,42 @@
 nav{
     background-color: purple;
-    height: 100vh;
     width: fit-content;
     #menu{
         width: 100%;
-        padding: 1em;
+        padding: .5em;
         cursor: pointer;
         fill: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: purple;
+        width: fit-content;
+        border-bottom-right-radius: 10px;
+    }
+    .navbar{
+        width: 100vh;
+        border: 1px solid purple;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        a{
+            width: 100% !important;
+            display: flex;
+            padding: .5em;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        svg{
+            fill: white;
+            padding: 1em;
+            padding-left: 0;
+            box-sizing: content-box;
+        }
     }
 }
