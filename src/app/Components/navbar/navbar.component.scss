@@ -1,8 +1,9 @@
 nav{
     background-color: purple;
     width: fit-content;
+    position: sticky;
+    top: 0;
     #menu{
-        width: 100%;
         padding: .5em;
         cursor: pointer;
         fill: white;
@@ -13,16 +14,20 @@ nav{
         width: fit-content;
         border-bottom-right-radius: 10px;
     }
+    .shownav{
+        width: 200px !important;
+    }
     .navbar{
-        width: 100vh;
         border: 1px solid purple;
         display: flex;
         flex-direction: column;
         height: 100vh;
-        width: fit-content;
+        width: 2.3rem;
         justify-content: center;
         align-items: center;
         text-align: left;
+        transition: 500ms width;
+        overflow: hidden;
         a{
             width: 100% !important;
             display: flex;
@@ -31,6 +36,12 @@ nav{
             text-decoration: none;
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             white-space: nowrap;
+             border-bottom: 3px solid transparent;
+             &:hover{
+                 border-bottom: 3px solid white;
+
+             }
         }
         svg{
             fill: white;
