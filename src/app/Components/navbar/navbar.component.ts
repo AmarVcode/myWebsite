@@ -19,5 +19,4 @@ export class NavbarComponent {
     nav?.classList.add("shownav")
   }
 }
-
 }

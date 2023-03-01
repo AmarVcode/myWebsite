@@ -1,16 +1,17 @@
 nav{
-    background-color: purple;
+    background-color: white;
     width: fit-content;
-    position: sticky;
+    position: fixed;
     top: 0;
+    box-shadow: 0px 0px 20px lime,inset 0px 0px 40px lime;
     #menu{
         padding: .5em;
         cursor: pointer;
-        fill: white;
+        fill: black;
         position: fixed;
         top: 0;
         left: 0;
-        background: purple;
+        background: transparent;
         width: fit-content;
         border-bottom-right-radius: 10px;
     }
@@ -34,17 +35,18 @@ nav{
             padding: .5em;
             align-items: center;
             text-decoration: none;
-            color: white;
+            color: black;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
              white-space: nowrap;
-             border-bottom: 3px solid transparent;
              &:hover{
-                 border-bottom: 3px solid white;
-
+                 box-shadow: 0px 0px 50px lime,inset 0px 0px 50px lime;
+                border-radius: 10px;
+                background: lime;
+               
              }
         }
         svg{
-            fill: white;
+            fill: black;
             padding: 1em;
             padding-left: 0;
             box-sizing: content-box;

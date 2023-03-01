@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+
+.wrapper{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  .wrapper .static-txt{
+    text-shadow: 0px 0px 10px lime;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: lime;
+    text-shadow: 0px 0px 10px lime;
+    font-size: 5rem;
+    font-weight: 500;
+    position: relative;
+    top: -40px;
+    animation: slide 12s steps(4) infinite;
+    box-sizing: border-box;
+    padding: .5em;
+  }
+  @keyframes slide {
+    100%{
+      top: -720px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 10px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    border-left: 2px solid lime;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+
+  .head{
+    margin-top: 100px;
+    font-size: 4rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: white;
+    text-shadow: 0px 0px 10px lime;
+    span{
+        color: lime;
+        text-shadow: 0px 0px 10px lime;
+    }
+  }
