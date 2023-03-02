@@ -3,6 +3,7 @@ nav{
     width: fit-content;
     position: fixed;
     top: 0;
+    z-index: 1000;
     box-shadow: 0px 0px 20px lime,inset 0px 0px 40px lime;
     #menu{
         padding: .5em;
@@ -19,7 +20,6 @@ nav{
         width: 200px !important;
     }
     .navbar{
-        border: 1px solid purple;
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -38,13 +38,13 @@ nav{
             color: black;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
              white-space: nowrap;
-             &:hover{
-                 box-shadow: 0px 0px 50px lime,inset 0px 0px 50px lime;
-                border-radius: 10px;
-                background: lime;
-               
-             }
-        }
+             
+            }
+            a:hover{
+                box-shadow: 0px 0px 50px lime,inset 0px 0px 50px lime;
+               border-radius: 10px;
+               background: lime;
+            }
         svg{
             fill: black;
             padding: 1em;

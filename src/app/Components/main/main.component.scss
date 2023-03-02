@@ -22,7 +22,7 @@
     margin-left: 15px;
     height: 90px;
     line-height: 90px;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .dynamic-txts li{
     list-style: none;
@@ -35,7 +35,30 @@
     animation: slide 12s steps(4) infinite;
     box-sizing: border-box;
     padding: .5em;
+    white-space: nowrap;
   }
+
+  @media (max-width:800px) {
+    .dynamic-txts{
+     transform: scale(.9);
+     text-align: left !important;
+     margin: 0 !important;
+    }
+    .dynamic-txts li{
+     transform: scale(.5);
+
+      text-align: left !important;
+     }
+  }
+
+  @media (max-width:700px){
+    .dynamic-txts{
+      transform: scale(.8);
+
+    }
+  }
+
+
   @keyframes slide {
     100%{
       top: -720px;
@@ -76,5 +99,58 @@
     span{
         color: lime;
         text-shadow: 0px 0px 10px lime;
+    }
+  }
+
+
+  .block{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+padding: 1em;
+    .info{
+      max-width: 150px;
+      padding: 1em;
+      margin: 1em;
+      h2{
+          text-align: center;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          
+        }
+      &>div{
+        height: 150px;
+        padding: 1em;
+        svg{
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .head2{
+    margin-top: 100px;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: white;
+    text-shadow: 0px 0px 10px lime;
+    padding: 1em;
+    span{
+      color: lime;
+      text-shadow: 0px 0px 10px lime;
+  }
+  }
+
+  #react{
+    animation: rotate 10s infinite linear;
+  }
+
+  @keyframes rotate {
+    0%{
+      transform: rotateZ(0deg);
+    }
+    100%{
+      transform: rotateZ(720deg);
+
     }
   }
